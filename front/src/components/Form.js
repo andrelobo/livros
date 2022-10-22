@@ -49,7 +49,6 @@ const Form = ({ getLivros, onEdit, setOnEdit }) => {
       livro.nome.value = onEdit.nome;
       livro.autor.value = onEdit.autor;
       livro.genero.value = onEdit.genero;
-      livro.capa.value = onEdit.capa;
       
     }
   }, [onEdit]);
@@ -62,8 +61,7 @@ const Form = ({ getLivros, onEdit, setOnEdit }) => {
     if (
       !livro.nome.value ||
       !livro.autor.value ||
-      !livro.genero.value ||
-      !livro.capa.value 
+      !livro.genero.value 
       
      ) {
       return toast.warn("Preencha todos os campos!");
@@ -72,10 +70,9 @@ const Form = ({ getLivros, onEdit, setOnEdit }) => {
     if (onEdit) {
       await axios
         .put("http://localhost:3333/livros/" + onEdit.id, {
-          nome: livro.name.value,
-          autor: livro.email.value,
-          genero: livro.password.value,
-          capa: livro.capa.value,
+          nome: livro.nome.value,
+          autor: livro.autor.value,
+          genero: livro.genero.value,
           
         })
         .then(({ data }) => toast.success(data))
@@ -86,7 +83,6 @@ const Form = ({ getLivros, onEdit, setOnEdit }) => {
           nome: livro.nome.value,
           autor: livro.autor.value,
           genero: livro.genero.value,
-          capa: livro.capa.value,
          
         })
         .then(({ data }) => toast.success(data))
@@ -96,7 +92,6 @@ const Form = ({ getLivros, onEdit, setOnEdit }) => {
     livro.nome.value = "";
     livro.autor.value = "";
     livro.genero.value = "";
-    livro.capa.value = "";
     
 
     setOnEdit(null);
@@ -114,7 +109,7 @@ const Form = ({ getLivros, onEdit, setOnEdit }) => {
         <Input name="autor"/>
       </InputArea>
       <InputArea>
-        <Label>Password</Label>
+        <Label>Genero</Label>
         <Input name="genero" />
       </InputArea>
       

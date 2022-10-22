@@ -67,7 +67,7 @@ const Grid = ({ livros, setLivros, setOnEdit }) => {
           <Th>Nome</Th>
           <Th>Autor</Th>
           <Th>Genero</Th>
-          <Th>Capa</Th>
+          
           <Th></Th>
           <Th></Th>
         </Tr>
@@ -78,7 +78,6 @@ const Grid = ({ livros, setLivros, setOnEdit }) => {
             <Td width="30%">{item.nome}</Td>
             <Td width="30%">{item.autor}</Td>
             <Td width="30%">{item.genero}</Td>
-            <Td width="30%">{item.capa}</Td>
             
             <Td alignCenter width="5%">
               <FaEdit onClick={() => handleEdit(item)} />
