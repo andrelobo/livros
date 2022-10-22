@@ -1,4 +1,4 @@
-# Desafio Fullstacl LIVROS 
+# Desafio Fullstack LIVROS 
 
 
 - É necessário o Postgres instalado - Posso providenciar a aplicação containerizada se for necessário :)
