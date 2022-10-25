@@ -18,7 +18,7 @@ Para rodar a API:
 Para rodar a api em desenvolvimento:
 - yarn dev
 
-############################################
+
 
 # Para rodar o FRONTEND: 
 - Entrar na pasta front e rodar os comandos:
@@ -29,6 +29,17 @@ Para instalar as dependências necessárias:
 
 Para rodar a aplicação na porta 3000:
 - yarn dev
+
+
+# Tecnologias utilizadas:
+
+- Nodejs 
+- Typeorm
+- Postgres
+- React
+
+
+
 
 
 
