@@ -47,6 +47,6 @@ Para rodar a aplicação na porta 3000:
 
 
 
-- [André Lobo](https://andrelobo.github.io)
+[André Lobo](https://andrelobo.github.io)
 
 
