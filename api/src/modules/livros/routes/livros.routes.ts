@@ -30,6 +30,26 @@ livrosRouter.post(
 
 );
 
+livrosRouter.get(
+  '/:id',
+  celebrate({
+    [Segments.PARAMS]: {
+      id: Joi.string().uuid().required(),
+    },
+  }),
+  livrosController.show);
+
+
+livrosRouter.get(
+  '/:nome',
+  celebrate({
+    [Segments.PARAMS]: {
+      nome: Joi.string().required(),
+    },
+  }),
+  livrosController.showByName);
+
+
 livrosRouter.put(
   '/:id',
   celebrate({
