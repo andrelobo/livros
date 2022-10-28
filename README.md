@@ -34,6 +34,7 @@ Para rodar a aplicação na porta 3000:
 # Tecnologias utilizadas:
 
 - Nodejs 
+- Typescript
 - Typeorm
 - Postgres
 - React
